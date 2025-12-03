@@ -18,15 +18,15 @@ return (
       <div>
           <ul>
             {navIcons.map(({id,img})=>(
-              <li id={id}>
-                <img  src={img} className="icon-hover" 
+              <li key={id}>
+                <img src={img} className="icon-hover" 
                       alt={`icon-${id}`} />
               </li>
             ))}
           </ul>
       </div>
 
-      <time datetime="">{dayjs().format('ddd MMM D h:mm A')}</time>
+      <time >{dayjs().format('ddd MMM D h:mm A')}</time>
     </nav>
     );
 };    
